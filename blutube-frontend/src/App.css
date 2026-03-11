@@ -1,42 +1,124 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  max-height: 4400px;
+  height:4400px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+/*searchbar*/
+
+.navbar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+ margin-left: -240px;
+ width: fit-content;
+ padding-top:40px;
+  color: #000000;
+  margin-top: -60px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+#navbar-container {
+ 
+  display:inline-flex;
+ 
+align-content: start;
+  width: 1000px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#blutube-search {
+ 
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#blutube-search:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 0 2px rgba(100, 108, 255, 0.2);
+}
+.blutube-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  padding-right: 40px;
+  margin-right: 200px;
+}
+#searchbar {
+  display: flex;
+  align-items: center;
+  width:250px;
+  border: gray solid 1px;
+  border-radius: 90px;
+  margin-left: 200px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input#blutube-search {
+ border: none;
+  padding: 0.5rem 1rem;
+ background-color: transparent;
+}
+input#blutube-search::after{
+  outline: none;
+  border: none;
+}
+#buttons-container {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  padding: 10px;
+  margin-left: 800px;
+}
+.create-button, .login-button {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*Homepage style */
+
+#homepage-container
+{display: grid;
+grid-template-rows: 100px 1000px auto;}
+
+#homepage-content {
+  display: grid;
+  grid-template-rows: auto auto auto;
+ margin-left:-300px;
+ width:1880px;
+  justify-content: center;
+  gap: 20px;
+ height:4000px;
+}
+#content-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+   padding-top: 20px;
+ 
+}
+#content {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;  
+  height:400px;
+  width:400px;
+  display: flex;
+ padding-right: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
-.card {
-  padding: 2em;
-}
+#sidebar{
+  background-color: #22867783;
+  border: 1px solid #ccc;  
+  height:1900px;
+  width:200px;
+  display: flex;
+ padding-right: 30px;
+ position:fixed;
+ margin-top: 0px;
+ margin-left: -310px;
 
-.read-the-docs {
-  color: #888;
 }
